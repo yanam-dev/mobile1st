@@ -1,9 +1,41 @@
-html{
-    box-sizing: border-box;
+@import 'vars';
+@import 'global';
+@import 'fonts';
+
+
+.header{
+    @extend %bg-image-style;
+    min-height: 300px;
+    width: 414px;
+    padding: 35px 14px;
+    &__inner{
+        .logo{
+
+        }
+        .letter{
+            padding-top: 4.61px;
+            a{
+                @extend %bg-image-style;
+                min-height: 16px;
+                width: 25px;
+            }
+        }
+    }
+    &__content{
+        text-align: left;
+        font-weight: 600;
+        color: #f4f4f8;
+        &-txt{
+            font-size: 16px;
+            line-height: 21px;
+            font-weight: 300;
+            font-family: 'Montserrat', sans-serif;
+            text-align: right;
+        }
+    }
 }
 
-*,
-*:before,
-*:after{
-    box-sizing: inherit;
-}
+
+
+
+@import 'media';
